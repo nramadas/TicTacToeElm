@@ -1,0 +1,3 @@
+var _user$project$Models_Player$PlayerX = {ctor: 'PlayerX'};
+var _user$project$Models_Player$PlayerO = {ctor: 'PlayerO'};
+var _user$project$Models_Player$initial = _user$project$Models_Player$PlayerO;

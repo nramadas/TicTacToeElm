@@ -1,0 +1,31 @@
+var _user$project$Views_Square$squareStyle = _elm_lang$html$Html_Attributes$style(
+	_elm_lang$core$Native_List.fromArray(
+		[
+			{ctor: '_Tuple2', _0: 'box-sizing', _1: 'border-box'},
+			{ctor: '_Tuple2', _0: 'width', _1: '200px'},
+			{ctor: '_Tuple2', _0: 'height', _1: '200px'},
+			{ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+			{ctor: '_Tuple2', _0: 'vertical-align', _1: 'middle'},
+			{ctor: '_Tuple2', _0: 'border', _1: '1px solid black'},
+			{ctor: '_Tuple2', _0: 'cursor', _1: 'pointer'}
+		]));
+var _user$project$Views_Square$view = function (token) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[_user$project$Views_Square$squareStyle]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				function () {
+				var _p0 = token;
+				switch (_p0.ctor) {
+					case 'X':
+						return _elm_lang$html$Html$text('X');
+					case 'O':
+						return _elm_lang$html$Html$text('O');
+					default:
+						return _elm_lang$html$Html$text('');
+				}
+			}()
+			]));
+};

@@ -1,0 +1,12 @@
+var _user$project$Hello$add = F2(
+	function (a, b) {
+		return a + b;
+	});
+var _user$project$Hello$main = {
+	main: A3(
+		_elm_lang$core$Debug$log,
+		_elm_lang$core$Basics$toString(
+			A2(_user$project$Hello$add, 1, 2)),
+		_elm_lang$html$Html$text,
+		'Hello World')
+};

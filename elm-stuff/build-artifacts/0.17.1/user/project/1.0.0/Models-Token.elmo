@@ -1,0 +1,4 @@
+var _user$project$Models_Token$None = {ctor: 'None'};
+var _user$project$Models_Token$initial = _user$project$Models_Token$None;
+var _user$project$Models_Token$O = {ctor: 'O'};
+var _user$project$Models_Token$X = {ctor: 'X'};

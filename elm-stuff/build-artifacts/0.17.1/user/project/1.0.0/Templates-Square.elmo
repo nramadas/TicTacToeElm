@@ -1,0 +1,51 @@
+var _user$project$Templates_Square$squareStyle = _elm_lang$html$Html_Attributes$style(
+	_elm_lang$core$Native_List.fromArray(
+		[
+			{ctor: '_Tuple2', _0: 'margin', _1: '0'},
+			{ctor: '_Tuple2', _0: 'display', _1: 'inline-block'},
+			{ctor: '_Tuple2', _0: 'vertical-align', _1: 'middle'},
+			{ctor: '_Tuple2', _0: 'box-sizing', _1: 'border-box'},
+			{ctor: '_Tuple2', _0: 'background-color', _1: 'white'},
+			{ctor: '_Tuple2', _0: 'width', _1: '200px'},
+			{ctor: '_Tuple2', _0: 'height', _1: '200px'},
+			{ctor: '_Tuple2', _0: 'border', _1: '1px solid black'},
+			{ctor: '_Tuple2', _0: 'cursor', _1: 'pointer'}
+		]));
+var _user$project$Templates_Square$PlayerO = {ctor: 'PlayerO'};
+var _user$project$Templates_Square$PlayerX = {ctor: 'PlayerX'};
+var _user$project$Templates_Square$view = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[
+				_user$project$Templates_Square$squareStyle,
+				_elm_lang$html$Html_Events$onClick(_user$project$Templates_Square$PlayerX)
+			]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				function () {
+				var _p0 = model;
+				switch (_p0.ctor) {
+					case 'X':
+						return _elm_lang$html$Html$text('x');
+					case 'O':
+						return _elm_lang$html$Html$text('o');
+					default:
+						return _elm_lang$html$Html$text('');
+				}
+			}()
+			]));
+};
+var _user$project$Templates_Square$NoToken = {ctor: 'NoToken'};
+var _user$project$Templates_Square$initialModel = _user$project$Templates_Square$NoToken;
+var _user$project$Templates_Square$O = {ctor: 'O'};
+var _user$project$Templates_Square$X = {ctor: 'X'};
+var _user$project$Templates_Square$update = F2(
+	function (owner, model) {
+		var _p1 = owner;
+		if (_p1.ctor === 'PlayerX') {
+			return {ctor: '_Tuple2', _0: _user$project$Templates_Square$X, _1: _elm_lang$core$Platform_Cmd$none};
+		} else {
+			return {ctor: '_Tuple2', _0: _user$project$Templates_Square$O, _1: _elm_lang$core$Platform_Cmd$none};
+		}
+	});

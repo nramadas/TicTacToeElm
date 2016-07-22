@@ -1,0 +1,31 @@
+var _user$project$Templates_Board$initialModel = {pos00: _user$project$Templates_Square$initialModel, pos01: _user$project$Templates_Square$initialModel, pos02: _user$project$Templates_Square$initialModel, pos10: _user$project$Templates_Square$initialModel, pos11: _user$project$Templates_Square$initialModel, pos12: _user$project$Templates_Square$initialModel, pos20: _user$project$Templates_Square$initialModel, pos21: _user$project$Templates_Square$initialModel, pos22: _user$project$Templates_Square$initialModel};
+var _user$project$Templates_Board$boardStyle = _elm_lang$html$Html_Attributes$style(
+	_elm_lang$core$Native_List.fromArray(
+		[
+			{ctor: '_Tuple2', _0: 'margin', _1: '20px auto'},
+			{ctor: '_Tuple2', _0: 'width', _1: '600px'},
+			{ctor: '_Tuple2', _0: 'height', _1: '600px'},
+			{ctor: '_Tuple2', _0: 'border', _1: '1px solid black'}
+		]));
+var _user$project$Templates_Board$board = function (model) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[_user$project$Templates_Board$boardStyle]),
+		_elm_lang$core$Native_List.fromArray(
+			[
+				_user$project$Templates_Square$view(model.pos00),
+				_user$project$Templates_Square$view(model.pos01),
+				_user$project$Templates_Square$view(model.pos02),
+				_user$project$Templates_Square$view(model.pos10),
+				_user$project$Templates_Square$view(model.pos11),
+				_user$project$Templates_Square$view(model.pos12),
+				_user$project$Templates_Square$view(model.pos20),
+				_user$project$Templates_Square$view(model.pos21),
+				_user$project$Templates_Square$view(model.pos22)
+			]));
+};
+var _user$project$Templates_Board$BoardModel = F9(
+	function (a, b, c, d, e, f, g, h, i) {
+		return {pos00: a, pos01: b, pos02: c, pos10: d, pos11: e, pos12: f, pos20: g, pos21: h, pos22: i};
+	});

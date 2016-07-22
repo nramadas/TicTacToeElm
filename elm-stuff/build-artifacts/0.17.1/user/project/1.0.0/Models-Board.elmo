@@ -1,0 +1,11 @@
+var _user$project$Models_Board$initial = {
+	tokens: A2(
+		_elm_lang$core$List$map,
+		function (n) {
+			return _user$project$Models_Token$initial;
+		},
+		_elm_lang$core$Native_List.range(0, 8))
+};
+var _user$project$Models_Board$Board = function (a) {
+	return {tokens: a};
+};

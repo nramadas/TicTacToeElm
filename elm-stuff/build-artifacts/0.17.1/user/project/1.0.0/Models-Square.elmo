@@ -1,0 +1,4 @@
+var _user$project$Models_Square$None = {ctor: 'None'};
+var _user$project$Models_Square$initial = _user$project$Models_Square$None;
+var _user$project$Models_Square$O = {ctor: 'O'};
+var _user$project$Models_Square$X = {ctor: 'X'};

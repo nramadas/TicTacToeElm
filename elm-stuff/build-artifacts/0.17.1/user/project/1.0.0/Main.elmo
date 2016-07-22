@@ -1,0 +1,12 @@
+var _user$project$Main$model = {board: _user$project$Models_Board$initial, player: _user$project$Models_Player$initial};
+var _user$project$Main$main = {
+	main: A3(
+		_elm_lang$core$Debug$log,
+		_elm_lang$core$Basics$toString(_user$project$Main$model),
+		_user$project$Views_Board$view,
+		_user$project$Main$model.board)
+};
+var _user$project$Main$Model = F2(
+	function (a, b) {
+		return {board: a, player: b};
+	});

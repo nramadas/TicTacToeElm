@@ -1,0 +1,15 @@
+var _user$project$Views_Board$boardStyle = _elm_lang$html$Html_Attributes$style(
+	_elm_lang$core$Native_List.fromArray(
+		[
+			{ctor: '_Tuple2', _0: 'margin', _1: '100px auto'},
+			{ctor: '_Tuple2', _0: 'width', _1: '600px'},
+			{ctor: '_Tuple2', _0: 'height', _1: '600px'},
+			{ctor: '_Tuple2', _0: 'border', _1: '1px solid black'}
+		]));
+var _user$project$Views_Board$view = function (board) {
+	return A2(
+		_elm_lang$html$Html$div,
+		_elm_lang$core$Native_List.fromArray(
+			[_user$project$Views_Board$boardStyle]),
+		A2(_elm_lang$core$List$map, _user$project$Views_Square$view, board.tokens));
+};
